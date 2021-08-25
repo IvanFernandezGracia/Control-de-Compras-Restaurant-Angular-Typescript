@@ -1,0 +1,112 @@
+<table class="table table-striped">
+  <thead class="thead-dark"></thead>
+  <tbody>
+    <tr>
+      <td colspan="5">
+        <table class="table table-striped">
+          <thead class="thead-dark">
+            <tr style="background-color: rgb(102, 46, 0); color: white">
+              <th>Producto</th>
+              <th>Cantidad</th>
+              <th>Valor Unidad</th>
+              <th>Total</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody *ngIf="!modeEdit">
+            <tr
+              *ngFor="
+                let comprasIndividial of comprasCliente;
+                let i = indexCompras
+              "
+            >
+              <td>{{ comprasIndividial.producto }}</td>
+              <td>{{ comprasIndividial.cantidad }}</td>
+              <td>
+                {{ comprasIndividial.valorUnidad | currency: "CL":"$":"3.0" }}
+              </td>
+              <td>
+                {{
+                  comprasIndividial.valorUnidad * comprasIndividial.cantidad
+                    | currency: "CL":"$":"3.0"
+                }}
+              </td>
+              <td>
+                <button
+                  style="padding: 5px 5px; border: none; background: none"
+                  (click)="eliminarCompra(comprasIndividial)"
+                >
+                  <i class="fas fa-trash-alt" style="color: red"></i>
+                </button>
+                <button
+                  style="padding: 5px 5px; border: none; background: none"
+                  (click)="editarCompra(comprasIndividial)"
+                >
+                  <i
+                    class="fas fa-pencil-alt"
+                    style="color: rgb(138, 102, 4)"
+                  ></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody *ngIf="modeEdit">
+            <tr ng-form="myForm">
+              <td>
+                <select
+                  class="form-control"
+                  id="editProduct"
+                  name="editProduct"
+                  style="display: block"
+                  [(ngModel)]="compraEdit.producto"
+                  #editProduct="ngModel"
+                  required
+                  >
+                  <option value="Bebestible">Bebestible</option>
+                  <option value="Comida">Comida</option>
+                  <option value="Postre">Postre</option>
+                  <option value="Entrada">Entrada</option>
+                </select>
+              </td>
+              <td>
+                <input
+                  type="number"
+                  name="editCantidad"
+                  id="editCantidad"
+                  class="form-control"
+                  placeholder="{{ compraEdit.cantidad }}"
+                  required
+                  #editCantidad="ngModel"
+                  [(ngModel)]="compraEdit.cantidad"
+                />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  name="editValorUnidad"
+                  id="editValorUnidad"
+                  class="form-control"
+                  placeholder="{{ compraEdit.valorUnidad }}"
+                  required
+                  #editValorUnidad="ngModel"
+                  [(ngModel)]="compraEdit.valorUnidad"
+                />
+              </td>
+              <td>{{ compraEdit.cantidad * compraEdit.valorUnidad }}</td>
+              <td>
+                <button
+                  class="btn btn-xs btn-primary"
+                  type="button"
+                  (click)="agregarCompra()"
+                >
+                  Guardar
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
