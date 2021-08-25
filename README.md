@@ -3,7 +3,7 @@ Web page to keep track of sales in a restaurant. Technologies used are: Angular,
 
 <!-- Image -->
 ## URL
-https://control-clientes-94f56.web.a
+https://control-clientes-94f56.web.app
 
 <!-- Image -->
 ## Home Page
