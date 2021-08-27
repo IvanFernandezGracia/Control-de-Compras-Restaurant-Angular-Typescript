@@ -19,9 +19,9 @@ https://user-images.githubusercontent.com/48660555/130709636-4cd6cc73-64fd-4d59-
   <tbody>
     <tr>
       <th align="center">Name</th>
-      <th align="center">Skilss</th>
-      <th align="center">Skilss</th>
-       <th align="center">Skilss</th>
+      <th align="center">Skills</th>
+      <th align="center">Skills</th>
+       <th align="center">Skills</th>
     </tr>
     <tr>
       <td align="center">JavaScript</td>
