@@ -24,37 +24,6 @@ https://user-images.githubusercontent.com/48660555/130709636-4cd6cc73-64fd-4d59-
        <th align="center">Skills</th>
     </tr>
     <tr>
-      <td align="center">JavaScript</td>
-      <td>
-        <ul>
-          <li>Data Types</li>
-          <li>Operators</li>
-           <li>Control statements</li>
-          <li>Arrays </li>
-          <li>Functions</li>
-          <li>Objects</li>
-           <li>Classes</li>
-          <li>Statics</li>
-        </ul>
-      </td>
-      <td>
-        <ul>
-          <li>Functions</li>
-          <li>Inheritance</li>
-           <li>StrictMode</li>
-          <li>OOP</li>
-          <li>Management Error</li>
-        </ul>
-      </td>
-      <td>
-         <ul>
-          <li>Arrow Function</li>
-          <li>Callbacks</li>
-           <li>Promise</li>
-         </ul>
-      </td>
-    </tr>
-    <tr>
       <td align="center">Angular</td>
       <td>
         <ul>
@@ -117,29 +86,6 @@ https://user-images.githubusercontent.com/48660555/130709636-4cd6cc73-64fd-4d59-
       </td>
     </tr>
     <tr>
-      <td align="center">HTML5 y CSS3</td>
-      <td>
-        <ul>
-          <li>Basic HTML</li>
-          <li>Basic Element HTML</li>
-          <li>Basic CSS </li>
-        </ul>
-      </td>
-      <td>
-        <ul>
-          <li>Links</li>
-          <li>Table</li>
-          <li>List</li>
-        </ul>
-      </td>
-      <td>
-        <ul>
-          <li>Inline and Block Element</li>
-          <li>Forms</li>
-          <li>Semantic Element</li>
-        </ul>
-      </td>
-    </tr>
     <tr>
       <td align="center">Firebase Firestore</td>
       <td>
